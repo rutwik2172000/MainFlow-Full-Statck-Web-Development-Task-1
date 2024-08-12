@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage with a search bar using HTML and CSS">
+    <title>Main-Flow Technology Task 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" placeholder="Search..." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1> <b> Welcome </b></h1> <br>
+            <p>This is a webpage using HTML to define its structure and CSS to style elements such as text, colors, and layout.</p>
+        </section>
+        <br>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We specialize in creating accessible and SEO-friendly websites.</p>
+        </section>
+            <br>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>SEO Optimization</li>
+                <li>Accessibility Consulting</li>
+            </ul>
+        </section>
+        <br>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea> <br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
